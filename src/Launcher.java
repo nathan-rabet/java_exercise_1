@@ -3,12 +3,18 @@ public class Launcher {
         System.out.println("Yas");
 
         java.util.Scanner scanner = new java.util.Scanner(System.in) ;
-        String s = scanner.nextLine();
-
-        if (!s.equals("quit"))
+        
+        while (true)
         {
+            String s = scanner.nextLine();
+
+            if (s.equals("quit"))
+            {
+                break;
+            }
             System.out.println("Unknown command");
         }
+
         scanner.close();
     }
 }
