@@ -9,6 +9,7 @@ public class Launcher {
         List<Command> commands = Arrays.asList(
                 new Fibo(),
                 new Freq(),
+                new Predict(),
                 new Quit());
 
         boolean mustContinue = true;

@@ -36,7 +36,7 @@ public class Freq implements Command {
             return false;
         }
 
-        ss = ss.replaceAll("[.,;-_\n]", " ").toLowerCase();
+        ss = ss.replaceAll("[ .,;_\n-]", " ").toLowerCase();
 
         if (!ss.isBlank()) {
             ArrayList<String> arr = new ArrayList<String>();
