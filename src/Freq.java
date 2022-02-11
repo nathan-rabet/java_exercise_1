@@ -54,7 +54,7 @@ public class Freq implements Command {
                     .limit(3).map(m -> m.getKey()).toArray());
 
             for (var word : arr2) {
-                System.out.println(word);
+                System.out.printf("%s ", word);
             }
         }
         return false;
